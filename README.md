@@ -1,25 +1,114 @@
-Introducción
-Buenas tardes a todos. Hoy les presentamos Terra, un proyecto web de concientización ambiental. Terra nació con una misión clara: informar y educar sobre problemáticas como la deforestación, el cambio climático y la contaminación del agua, a través de contenidos simples y accesibles para todos.
- 
- El problema
-Hoy en día, muchas personas no tienen acceso a información clara sobre los problemas ambientales. Esa falta de conocimiento hace que sea difícil tomar conciencia y actuar. Y mientras tanto, la contaminación avanza, la biodiversidad se pierde y los recursos naturales se deterioran.
+<div align="center">
 
- ¿Por qué Terra?
-Creamos Terra para generar un espacio digital donde cualquier persona pueda informarse de manera sencilla. No queremos solo transmitir datos: queremos motivar a las personas a involucrarse en la protección de nuestro planeta.
+# 🌍 Terra
+### *Informarse es el primer paso para cuidar nuestro planeta.*
 
- Objetivos
-Nuestro objetivo principal es concientizar y educar. Pero también buscamos promover acciones sostenibles, construir una comunidad comprometida y generar un impacto real en la relación que las personas tienen con el medio ambiente.
- 
- Qué esperamos lograr
-Esperamos que los usuarios de Terra salgan con mayor conocimiento, con una mirada más crítica sobre los problemas ambientales, y sobre todo, con ganas de cambiar pequeños hábitos cotidianos que sumen al cuidado del planeta.
- 
- La página
-La web está organizada en secciones temáticas, con información clara, imágenes y actividades interactivas. Cada sección está pensada para que el usuario no solo lea, sino que también participe y reflexione.
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Estado](https://img.shields.io/badge/Estado-Finalizado-success?style=for-the-badge)
 
- Cómo trabajamos
-El equipo se organizó de manera colaborativa, dividiendo tareas de investigación, diseño, redacción y programación. Usamos el método To Do / Doing / Done para llevar el seguimiento de cada tarea y mantener el trabajo ordenado y eficiente.
+---
 
+## 🌱 Introducción
 
-Terra — porque informarse es el primer paso para cuidar nuestro planeta. ¡Muchas gracias!
+**Terra** es un proyecto web de **concientización ambiental** creado con el objetivo de informar, educar e inspirar a las personas a cuidar el medio ambiente.
 
+A través de contenido claro, imágenes y actividades interactivas, abordamos temas como:
+
+- 🌳 Deforestación
+- 🌡️ Cambio climático
+- 💧 Contaminación del agua
+- 🌍 Protección del medio ambiente
+
+---
+
+## 🚨 El problema
+
+Actualmente, muchas personas no tienen acceso a información sencilla y confiable sobre las problemáticas ambientales.
+
+Esta falta de conocimiento dificulta la toma de conciencia y la adopción de hábitos sostenibles, mientras que:
+
+- 🌫️ La contaminación continúa aumentando.
+- 🦜 Se pierde biodiversidad.
+- 🌱 Los recursos naturales se deterioran.
+
+---
+
+## 💚 ¿Por qué Terra?
+
+Creamos Terra para ofrecer un espacio digital donde cualquier persona pueda aprender de forma simple y accesible.
+
+Nuestro propósito no es únicamente compartir información, sino también **motivar a las personas a involucrarse activamente en el cuidado del planeta.**
+
+---
+
+## 🎯 Objetivos
+
+Nuestro proyecto busca:
+
+- 📚 Educar sobre problemáticas ambientales.
+- 🌎 Generar conciencia ecológica.
+- ♻️ Promover hábitos sostenibles.
+- 🤝 Construir una comunidad comprometida.
+- 💡 Inspirar acciones que generen un impacto positivo.
+
+---
+
+## 🚀 ¿Qué esperamos lograr?
+
+Queremos que quienes visiten Terra:
+
+- ✅ Comprendan mejor los desafíos ambientales.
+- ✅ Desarrollen una mirada crítica sobre el impacto humano.
+- ✅ Incorporen pequeños cambios en su vida cotidiana.
+- ✅ Se conviertan en agentes de cambio para proteger el planeta.
+
+---
+
+## 🖥️ La página web
+
+La plataforma está organizada en distintas secciones temáticas, pensadas para ofrecer una experiencia clara, intuitiva e interactiva.
+
+Incluye:
+
+- 📖 Información educativa.
+- 🖼️ Imágenes ilustrativas.
+- 🎮 Actividades interactivas.
+- 💭 Espacios de reflexión.
+
+Nuestro objetivo es que el usuario **no solo lea, sino que también participe y aprenda.**
+
+---
+
+## 👨‍💻 Cómo trabajamos
+
+El desarrollo del proyecto se realizó de manera colaborativa.
+
+El equipo dividió las tareas en diferentes áreas:
+
+- 🔍 Investigación
+- 🎨 Diseño
+- ✍️ Redacción
+- 💻 Programación
+
+Para organizar el trabajo utilizamos la metodología:
+
+- 📋 **To Do**
+- 🚧 **Doing**
+- ✅ **Done**
+
+Esto nos permitió mantener un flujo de trabajo ordenado y eficiente durante todo el desarrollo.
+
+---
+
+<div align="center">
+
+# 🌍 Terra
+
+### **Porque informarse es el primer paso para cuidar nuestro planeta.**
+
+💚 *Gracias por visitar nuestro proyecto.*
+
+</div>
 
