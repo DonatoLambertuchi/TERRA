@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra — Juntos por un Planeta Sostenible</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="header">
+    <div class="header__inner">
+
+      <a class="header__logo" onclick="scrollTo('inicio')">
+        <!-- Leaf icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+             fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+        </svg>
+        <span class="header__logo-text">Terra</span>
+      </a>
+
+      <nav class="header__nav">
+        <button class="nav-link" onclick="scrollTo('inicio')">Inicio</button>
+        <button class="nav-link" onclick="scrollTo('problemas')">Problemas</button>
+        <button class="nav-link" onclick="scrollTo('donar')">Donar</button>
+        <button class="nav-link" onclick="scrollTo('contacto')">Contacto</button>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="6" x2="20" y2="6"/>
+          <line x1="4" y1="12" x2="20" y2="12"/>
+          <line x1="4" y1="18" x2="20" y2="18"/>
+        </svg>
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             style="display:none">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="nav-link" onclick="scrollTo('inicio'); closeMenu()">Inicio</button>
+      <button class="nav-link" onclick="scrollTo('problemas'); closeMenu()">Problemas</button>
+      <button class="nav-link" onclick="scrollTo('donar'); closeMenu()">Donar</button>
+      <button class="nav-link" onclick="scrollTo('contacto'); closeMenu()">Contacto</button>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero" id="inicio">
+    <img
+      class="hero__bg"
+      src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&q=80"
+      alt="Bosque verde exuberante"
+    />
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">Juntos por un Planeta Sostenible</h1>
+      <p class="hero__subtitle">
+        Cada acción cuenta. Únete a nosotros en la lucha contra los problemas
+        ambientales más urgentes de nuestro tiempo y construyamos un futuro mejor
+        para las próximas generaciones.
+      </p>
+      <button class="btn-white" onclick="scrollTo('donar')">Contribuye Ahora</button>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PROBLEMAS
+       ============================================================ -->
+  <section class="section" id="problemas">
+    <div class="container">
+
+      <div class="section-header">
+        <h2 class="section-header__title">Problemas Ambientales Globales</h2>
+        <p class="section-header__subtitle">Los desafíos más urgentes que enfrenta nuestro planeta hoy.</p>
+      </div>
+
+      <div class="problems-grid">
+
+        <!-- TARJETA 1: Cambio Climático -->
+        <article class="problem-card">
+          <div class="problem-card__image-wrap">
+            <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&q=80" alt="Cambio Climático" />
+            <div class="problem-card__image-overlay"></div>
+          </div>
+          <div class="problem-card__body">
+            <div class="problem-card__header">
+              <div class="icon-circle">
+                <!-- Thermometer -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+                </svg>
+              </div>
+              <h3 class="problem-card__title">Cambio Climático</h3>
+            </div>
+            <p class="problem-card__desc">
+              El aumento de las temperaturas globales está causando eventos climáticos extremos,
+              derretimiento de glaciares y aumento del nivel del mar.
+            </p>
+            <div class="stats-box">
+              <div class="stats-box__row">
+                <span class="stats-box__label">• Aumento temperatura global</span>
+                <span class="stats-box__value">+1.1°C</span>
+              </div>
+              <div class="stats-box__row">
+                <span class="stats-box__label">• Nivel del mar (aumento)</span>
+                <span class="stats-box__value">21 cm</span>
+              </div>
+              <div class="stats-box__row">
+                <span class="stats-box__label">• Meta reducción CO₂</span>
+                <span class="stats-box__value">45% para 2030</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- TARJETA 2: Contaminación -->
+        <article class="problem-card">
+          <div class="problem-card__image-wrap">
+            <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?w=800&q=80" alt="Contaminación" />
+            <div class="problem-card__image-overlay"></div>
+          </div>
+          <div class="problem-card__body">
+            <div class="problem-card__header">
+              <div class="icon-circle">
+                <!-- Droplets -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/>
+                  <path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/>
+                </svg>
+              </div>
+              <h3 class="problem-card__title">Contaminación</h3>
+            </div>
+            <p class="problem-card__desc">
+              La contaminación del aire, agua y suelo afecta la salud de millones de personas
+              y ecosistemas en todo el mundo.
+            </p>
+            <div class="stats-box">
+              <div class="stats-box__row">
+                <span class="stats-box__label">• Muertes anuales por aire</span>
+                <span class="stats-box__value">7 millones</span>
+              </div>
+              <div class="stats-box__row">
+                <span class="stats-box__label">• Plástico en océanos</span>
+                <span class="stats-box__value">8M ton/año</span>
+              </div>
+              <div class="stats-box__row">
+                <span class="stats-box__label">• Reciclaje plástico global</span>
+                <span class="stats-box__value">Solo 9%</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- TARJETA 3: Deforestación -->
+        <article class="problem-card">
+          <div class="problem-card__image-wrap">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80" alt="Deforestación" />
+            <div class="problem-card__image-overlay"></div>
+          </div>
+          <div class="problem-card__body">
+            <div class="problem-card__header">
+              <div class="icon-circle">
+                <!-- Trees -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 22v-2H7v2"/>
+                  <path d="M7 13.5 3 9h4.5L5 5h5.5L9 2h6l-1.5 3H19l-2.5 4H21l-4 4.5H7z"/>
+                </svg>
+              </div>
+              <h3 class="problem-card__title">Deforestación</h3>
+            </div>
+            <p class="problem-card__desc">
+              La pérdida de bosques reduce la biodiversidad, aumenta las emisiones de CO₂
+              y destruye hábitats críticos para la vida silvestre.
+            </p>
+            <div class="stats-box">
+              <div class="stats-box__row">
+                <span class="stats-box__label">• Bosques perdidos (anual)</span>
+                <span class="stats-box__value">10M hectáreas</span>
+              </div>
+              <div class="stats-box__row">
+                <span class="stats-box__label">• Especies en riesgo</span>
+                <span class="stats-box__value">+80%</span>
+              </div>
+              <div class="stats-box__row">
+                <span class="stats-box__label">• Amazonia deforestada</span>
+                <span class="stats-box__value">17%</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- TARJETA 4: Biodiversidad -->
+        <article class="problem-card">
+          <div class="problem-card__image-wrap">
+            <img src="https://images.unsplash.com/photo-1504173010664-32509107de56?w=800&q=80" alt="Biodiversidad" />
+            <div class="problem-card__image-overlay"></div>
+          </div>
+          <div class="problem-card__body">
+            <div class="problem-card__header">
+              <div class="icon-circle">
+                <!-- Leaf -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                </svg>
+              </div>
+              <h3 class="problem-card__title">Pérdida de Biodiversidad</h3>
+            </div>
+            <p class="problem-card__desc">
+              La extinción acelerada de especies y la destrucción de ecosistemas
+              amenazan el equilibrio natural del planeta.
+            </p>
+            <div class="stats-box">
+              <div class="stats-box__row">
+                <span class="stats-box__label">• Especies amenazadas</span>
+                <span class="stats-box__value">1 millón</span>
+              </div>
+              <div class="stats-box__row">
+                <span class="stats-box__label">• Declive vida silvestre</span>
+                <span class="stats-box__value">69% desde 1970</span>
+              </div>
+              <div class="stats-box__row">
+                <span class="stats-box__label">• Insectos en peligro</span>
+                <span class="stats-box__value">40%</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /problems-grid -->
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       DONACIONES
+       ============================================================ -->
+  <section class="section section--alt" id="donar">
+    <div class="container">
+      <div class="donate-card">
+
+        <!-- Izquierdo -->
+        <div class="donate-card__left">
+          <div class="icon-circle--lg">
+            <!-- Heart -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                 fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+            </svg>
+          </div>
+          <h2 class="donate-card__title">Tu Ayuda Marca la Diferencia</h2>
+          <p class="donate-card__desc">
+            Cada donación se destina íntegramente a proyectos ambientales verificados.
+            Trabajamos con comunidades locales y organizaciones reconocidas para maximizar
+            el impacto de tu contribución.
+          </p>
+          <ul class="donate-card__list">
+            <li><span class="dot"></span>Plantar más de 100,000 árboles anuales</li>
+            <li><span class="dot"></span>Proteger hábitats naturales en riesgo</li>
+            <li><span class="dot"></span>Educar comunidades sobre sostenibilidad</li>
+            <li><span class="dot"></span>Financiar investigación ambiental</li>
+          </ul>
+        </div>
+
+        <!-- Derecho -->
+        <div class="donate-card__right">
+          <h3 class="donate-card__impact-title">Impacto de tu donación:</h3>
+          <div class="tiers-grid">
+            <div class="tier">
+              <div class="tier__amount">$10</div>
+              <div class="tier__trees">5 árboles</div>
+            </div>
+            <div class="tier">
+              <div class="tier__amount">$50</div>
+              <div class="tier__trees">30 árboles</div>
+            </div>
+            <div class="tier">
+              <div class="tier__amount">$100</div>
+              <div class="tier__trees">75 árboles</div>
+            </div>
+          </div>
+          <button class="btn-primary btn-full">Donar Ahora</button>
+          <p class="donate-note">
+            El 100% de las donaciones va directamente a proyectos ambientales.
+            Todas las contribuciones son deducibles de impuestos.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER / CONTACTO
+       ============================================================ -->
+  <footer class="footer" id="contacto">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Columna 1: Marca -->
+        <div>
+          <div class="footer__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                 fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+            </svg>
+            <span class="footer__logo-text">Terra</span>
+          </div>
+          <p class="footer__tagline">
+            Trabajando juntos por un futuro sostenible y un planeta más saludable
+            para las generaciones futuras.
+          </p>
+        </div>
+
+        <!-- Columna 2: Contacto -->
+        <div>
+          <h4 class="footer__col-title">Contacto</h4>
+          <ul class="contact-list">
+            <li class="contact-list__item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                   fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              info@terra.org
+            </li>
+            <li class="contact-list__item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                   fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17z"/>
+              </svg>
+              +54 011 4123-4567
+            </li>
+            <li class="contact-list__item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                   fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              Pilar, Buenos Aires
+            </li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Redes -->
+        <div>
+          <h4 class="footer__col-title">Síguenos</h4>
+          <div class="social-links">
+            <button class="social-btn" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                   fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </button>
+            <button class="social-btn" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                   fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+              </svg>
+            </button>
+            <button class="social-btn" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                   fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </button>
+            <button class="social-btn" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                   fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect width="4" height="12" x="2" y="9"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Terra. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
